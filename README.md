@@ -5,7 +5,8 @@
 [![Issues](https://img.shields.io/github/issues/DavidF-Dev/Terraria-Guid-Player-Lib?style=flat-square)](https://github.com/DavidF-Dev/Terraria-Guid-Player-Lib/issues)
 [![License](https://img.shields.io/github/license/DavidF-Dev/Terraria-Guid-Player-Lib?style=flat-square)](https://github.com/DavidF-Dev/Terraria-Guid-Player-Lib/blob/main/LICENSE.md)
 
-A Terraria tModLoader library mod for **Foo**.
+A Terraria tModLoader library mod that provides a globally unique identifier (GUID) for each player.<br />
+The GUID is synced and can be accessed from server and client safely.
 
 ## Usage
 ### Requirements
@@ -21,8 +22,18 @@ tModLoader should handle subscribing to it automatically.
 In the odd case that it doesn't, simply subscribe to it manually.
 
 ### Public methods
+All calls are available via extension methods in the `GuidPlayerExtensions` static class.
+```csharp
+// Retrieve a player's GUID
+Guid guid = player.GetGuid();
+```
 
 ### Mod calls
+```csharp
+// Retrieve a player's GUID
+Mod mod = ModLoader.GetMod("GuidPlayerLibMod");
+Guid guid = (Guid)mod.Call("GetGuid", player);
+```
 
 ## Contact & Support
 
