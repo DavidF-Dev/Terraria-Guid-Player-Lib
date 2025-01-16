@@ -3,17 +3,13 @@
   <Import Project="..\tModLoader.targets" />
   <PropertyGroup>
     <AssemblyName>GuidPlayerLib</AssemblyName>
-    <TargetFramework>net6.0</TargetFramework>
     <PlatformTarget>AnyCPU</PlatformTarget>
     <LangVersion>latest</LangVersion>
 	<GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="tModLoader.CodeAssist" Version="0.1.*" />
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="EasyPacketsLib">
-      <HintPath>..\EasyPacketsLib\bin\Release\net6.0\EasyPacketsLib.dll</HintPath>
+      <HintPath>..\EasyPacketsLib\bin\Release\net8.0\EasyPacketsLib.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
