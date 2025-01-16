@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace GuidPlayerLib.Code.Internals;
@@ -9,7 +10,7 @@ internal sealed class GetGuidCommand : ModCommand
 {
     #region Properties
 
-    public override string Command => "get-guid";
+    public override string Command => "guid";
 
     public override string Usage => $"{Command} <get|list>";
 
@@ -29,7 +30,18 @@ internal sealed class GetGuidCommand : ModCommand
 
         if (args[0] == "get")
         {
-            if (args.Length < 2 || !int.TryParse(args[1], out var whoAmI) || whoAmI < 0 || whoAmI >= Main.maxPlayers)
+            int whoAmI;
+            if (args.Length < 2)
+            {
+                if (Main.netMode == NetmodeID.Server)
+                {
+                    caller.Reply($"Invalid usage: {Command} get <whoAmI>", Color.Red);
+                    return;
+                }
+                
+                whoAmI = Main.myPlayer;
+            }
+            else if (!int.TryParse(args[1], out whoAmI) || whoAmI < 0 || whoAmI >= Main.maxPlayers)
             {
                 caller.Reply($"Invalid usage: {Command} get <whoAmI>", Color.Red);
                 return;
