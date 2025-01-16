@@ -1,6 +1,6 @@
 displayName = Guid Player Library
 author = DavidFDev
-version = 0.1.0
+version = 1.0.0
 homepage = https://github.com/DavidF-Dev/Terraria-Guid-Player-Lib
 modReferences = EasyPacketsLib
 hideCode = false
