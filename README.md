@@ -31,7 +31,7 @@ Guid guid = player.GetGuid();
 ### Mod calls
 ```csharp
 // Retrieve a player's GUID
-Mod mod = ModLoader.GetMod("GuidPlayerLibMod");
+Mod mod = ModLoader.GetMod("GuidPlayerLib");
 Guid guid = (Guid)mod.Call("GetGuid", player);
 ```
 
