@@ -5,7 +5,7 @@
 [![Issues](https://img.shields.io/github/issues/DavidF-Dev/Terraria-Guid-Player-Lib?style=flat-square)](https://github.com/DavidF-Dev/Terraria-Guid-Player-Lib/issues)
 [![License](https://img.shields.io/github/license/DavidF-Dev/Terraria-Guid-Player-Lib?style=flat-square)](https://github.com/DavidF-Dev/Terraria-Guid-Player-Lib/blob/master/LICENSE.md)
 
-A Terraria tModLoader library mod that provides a globally unique identifier (GUID) for each player.<br />
+A Terraria tModLoader library mod that provides a persistent globally unique identifier (GUID) for each player.<br />
 The GUID is synced and can be accessed from server and client safely.
 
 ## Usage

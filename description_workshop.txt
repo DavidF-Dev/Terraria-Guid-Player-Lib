@@ -1,1 +1,1 @@
-A library mod that provides a globally unique identifier (GUID) for each player. View more information and documentation on [url=https://github.com/DavidF-Dev/Terraria-Guid-Player-Lib]GitHub[/url], which also includes the source code.
+A library mod that provides a persistent globally unique identifier (GUID) for each player. View more information and documentation on [url=https://github.com/DavidF-Dev/Terraria-Guid-Player-Lib]GitHub[/url], which also includes the source code.
