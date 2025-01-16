@@ -1,7 +1,7 @@
 # Guid Player Library
 [![Release](https://img.shields.io/github/v/release/DavidF-Dev/Terraria-Guid-Player-Lib?style=flat-square)](https://github.com/DavidF-Dev/Terraria-Guid-Player-Lib/releases/latest)
-[![Downloads](https://img.shields.io/steam/downloads/0?style=flat-square)](https://steamcommunity.com/sharedfiles/filedetails/?id=0)
-[![File Size](https://img.shields.io/steam/size/0?style=flat-square)](https://steamcommunity.com/sharedfiles/filedetails/?id=0)
+[![Downloads](https://img.shields.io/steam/downloads/3408408416?style=flat-square)](https://steamcommunity.com/sharedfiles/filedetails/?id=3408408416)
+[![File Size](https://img.shields.io/steam/size/3408408416?style=flat-square)](https://steamcommunity.com/sharedfiles/filedetails/?id=3408408416)
 [![Issues](https://img.shields.io/github/issues/DavidF-Dev/Terraria-Guid-Player-Lib?style=flat-square)](https://github.com/DavidF-Dev/Terraria-Guid-Player-Lib/issues)
 [![License](https://img.shields.io/github/license/DavidF-Dev/Terraria-Guid-Player-Lib?style=flat-square)](https://github.com/DavidF-Dev/Terraria-Guid-Player-Lib/blob/main/LICENSE.md)
 
@@ -15,7 +15,7 @@ The GUID is synced and can be accessed from server and client safely.
 ### Referencing the library
 - Add `modReferences = GuidPlayerLib` to your mod's `build.txt` file.
 - Add `GuidPlayerLib.dll` to your project as a reference (download from [Releases](https://github.com/DavidF-Dev/Terraria-Guid-Player-Lib/releases/latest)).
-- Subscribe to the library mod on the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=0).
+- Subscribe to the library mod on the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3408408416).
 
 Note: this library depends on my [Easy Packet Library](https://github.com/DavidF-Dev/Terraria-Easy-Packets-Lib).
 tModLoader should handle subscribing to it automatically.
